@@ -29,6 +29,7 @@ Use this standard across prompt compilation, raster generation, PowerPoint recon
 
 ## 4. Use a restrained visual system
 
+- Omit a figure-level title and subtitle by default for manuscript figures; the paper caption supplies context. Include one only when the artifact must stand alone, such as a presentation, poster, or explicitly requested graphical abstract.
 - Start from a white or near-white canvas, neutral text and borders, and two semantic accent colors. Add a small auxiliary color only for a real additional role.
 - Encode one role consistently across color, stroke, shape, and label treatment. Do not assign a new color to every module or rely on color alone.
 - Prefer alignment and whitespace for grouping. Use pale regions or boundaries only when they encode a real scope, phase, domain, or responsibility.

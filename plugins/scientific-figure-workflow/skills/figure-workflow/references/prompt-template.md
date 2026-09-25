@@ -21,6 +21,7 @@ Figure goal:
 - Intended use: [paper / proposal / presentation]
 - Audience: [AUDIENCE]
 - Aspect ratio or publication size: [16:9 / single column / double column / OTHER]
+- Figure-level title: omit for manuscript figures unless standalone use or the user explicitly requires one
 
 Required semantics:
 - [MODULE, STAGE, OR CLAIM 1]
@@ -40,6 +41,7 @@ Visual direction:
 - Numbering style: restrained text numbering or a small eyebrow label; avoid colored numbered circles unless explicitly justified
 - Connector style: simple, directional, routed behind content, with explicit attachment sides and no text crossings
 - Typography: natural phrase wrapping, consistent type scale and margins, no mid-word breaks or emergency shrink-to-fit
+- Do not add a figure-level title or subtitle to a manuscript figure; rely on its caption for context
 - Avoid badge-heavy headings, excessive rounded cards, floating bubbles, generic icon repetition, and ornamental gradients
 
 Approved visible text:

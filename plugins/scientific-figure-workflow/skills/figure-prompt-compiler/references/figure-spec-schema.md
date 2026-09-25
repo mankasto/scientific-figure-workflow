@@ -8,6 +8,7 @@ purpose: string
 audience: string
 figure_type: architecture|concept|mechanism|workflow|graphical-abstract|evaluation
 aspect_ratio: string
+figure_title_policy: omit|standalone-title|reference-defined
 reading_order: [string]
 visual_anchor:
   subject: string
