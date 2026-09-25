@@ -38,7 +38,15 @@ def main():
     if qa_path.exists():
         try:
             qa = json.loads(qa_path.read_text(encoding="utf-8"))
+            visual = qa.get("visual", {})
             edit = qa.get("editability", {})
+            if qa.get("passed"):
+                for check in ("connector_routing", "typography", "numbering_and_containers"):
+                    result = visual.get(check)
+                    if not isinstance(result, dict):
+                        errors.append(f"QA passed without required visual check: {check}")
+                    elif result.get("passed") is not True:
+                        errors.append(f"QA passed despite failed visual check: {check}")
             if qa.get("passed") and edit.get("whole_slide_raster_count", 0) > 0:
                 errors.append("QA passed despite a whole-slide raster")
             if qa.get("passed") and edit.get("native_shape_count", 0) < 1:

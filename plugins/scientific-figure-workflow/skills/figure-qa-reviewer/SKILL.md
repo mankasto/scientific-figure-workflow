@@ -14,10 +14,12 @@ Review upstream artifacts without relying on producer claims. Write under `04_qa
 Verify:
 
 1. Semantic invariants: region count, order, connections, direction, color meanings, text associations, and forbidden additions.
-2. Visual quality: hierarchy, density, alignment, typography, image quality, and consistency with the approved PNG.
+2. Visual quality: hierarchy, density, alignment, typography, connector routing, numbering treatment, image quality, and consistency with the approved PNG.
 3. PPTX integrity: intended slide count, valid package, expected dimensions, no clipping or unreadable text.
 4. Editability: native shapes, native text objects, connectors, raster images, and any whole-slide raster.
 
 Fail the editability gate when the slide is effectively one screenshot, even if it renders perfectly. Accept raster assets only for inherently raster or impractically complex visual regions that remain independently replaceable.
+
+Apply the reconstructor's [layout quality contract](../figure-ppt-reconstructor/references/layout-quality-contract.md) independently. Fail visual QA for arrows that cross text, enter the wrong target, reverse direction, detach from endpoints, or form unexplained tangles. Also fail for mid-word wrapping, clipped or emergency-small text, inconsistent typography, or gratuitous numbered circles and badge-heavy headings. Automated geometry warnings are evidence to inspect, not findings to dismiss without a rendered visual check.
 
 Use [references/qa-schema.md](references/qa-schema.md). Update `status.json` to `complete` only when every hard gate passes.

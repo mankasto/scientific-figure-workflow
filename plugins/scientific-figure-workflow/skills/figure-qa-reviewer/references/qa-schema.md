@@ -4,7 +4,13 @@
 {
   "passed": true,
   "semantic": {"passed": true, "findings": []},
-  "visual": {"passed": true, "findings": []},
+  "visual": {
+    "passed": true,
+    "connector_routing": {"passed": true, "findings": []},
+    "typography": {"passed": true, "findings": []},
+    "numbering_and_containers": {"passed": true, "findings": []},
+    "findings": []
+  },
   "package": {"passed": true, "slide_count": 1, "findings": []},
   "editability": {
     "passed": true,

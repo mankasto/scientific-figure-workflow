@@ -37,6 +37,10 @@ Visual direction:
 - Palette or semantic colors: [COLORS, OPTIONAL]
 - Style: restrained, publication-ready, consistent with the target research community
 - Improve hierarchy, spacing, grouping, and image quality without changing source meaning
+- Numbering style: restrained text numbering or a small eyebrow label; avoid colored numbered circles unless explicitly justified
+- Connector style: simple, directional, routed behind content, with explicit attachment sides and no text crossings
+- Typography: natural phrase wrapping, consistent type scale and margins, no mid-word breaks or emergency shrink-to-fit
+- Avoid badge-heavy headings, excessive rounded cards, floating bubbles, generic icon repetition, and ornamental gradients
 
 Approved visible text:
 - [EXACT STRING 1]
@@ -61,11 +65,15 @@ PowerPoint reconstruction:
 - Rebuild titles, body text, panels, borders, arrows, connectors, metric bars, and simple icons as native objects.
 - Use raster images only for inherently image-like or impractically complex regions.
 - Insert each raster region as an independently selectable and replaceable asset.
+- Plan connector routes before authoring; reject reversed, tangled, detached, duplicated, or text-crossing arrows.
+- Resize or rewrite text boxes when copy does not fit; do not accept mid-word wrapping, clipping, or unreadably small text.
+- Use typographic numbers by default instead of circular number badges.
 - Write component_manifest.json and render a PPT preview.
 
 QA and delivery:
 - Verify semantic invariants, reading order, text associations, palette meanings, and forbidden additions.
 - Verify visual hierarchy, typography, alignment, clipping, image quality, slide count, and package integrity.
+- Fail visual QA for connector-routing errors, broken word wrapping, inconsistent text hierarchy, or gratuitous numbered circles.
 - Inspect the presentation object model; do not infer editability from the .pptx extension.
 - Fail QA if whole_slide_raster_count is greater than 0 or if native shapes/text are absent.
 - Deliver the specification, prompt, selected PNG, editable PPTX, preview, component manifest, QA report, and status.json.
