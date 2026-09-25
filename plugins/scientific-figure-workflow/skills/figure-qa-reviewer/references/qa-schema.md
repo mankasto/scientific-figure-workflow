@@ -9,6 +9,8 @@
     "connector_routing": {"passed": true, "findings": []},
     "typography": {"passed": true, "findings": []},
     "numbering_and_containers": {"passed": true, "findings": []},
+    "asset_fidelity": {"passed": true, "findings": []},
+    "palette_restraint": {"passed": true, "findings": []},
     "publication_size": {"passed": true, "findings": []},
     "findings": []
   },

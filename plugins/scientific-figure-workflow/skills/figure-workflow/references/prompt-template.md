@@ -36,6 +36,7 @@ Visual direction:
 - Raster-preferred regions: [PHOTOREALISTIC OR SIMULATOR SCENES, DENSE TEXTURES]
 - Vector-preferred regions: [PANELS, LABELS, ARROWS, ICONS, METRICS]
 - Palette or semantic colors: [COLORS, OPTIONAL]
+- Saturation: restrained; mute repeated accents and generated assets when they compete with structure
 - Style: restrained, publication-ready, consistent with the target research community
 - Improve hierarchy, spacing, grouping, and image quality without changing source meaning
 - Numbering style: restrained text numbering or a small eyebrow label; avoid colored numbered circles unless explicitly justified

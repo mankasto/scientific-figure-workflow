@@ -31,6 +31,7 @@ Use this standard across prompt compilation, raster generation, PowerPoint recon
 
 - Omit a figure-level title and subtitle by default for manuscript figures; the paper caption supplies context. Include one only when the artifact must stand alone, such as a presentation, poster, or explicitly requested graphical abstract.
 - Start from a white or near-white canvas, neutral text and borders, and two semantic accent colors. Add a small auxiliary color only for a real additional role.
+- Keep accent saturation moderate and subordinate to structure. Large or repeated high-saturation regions require a semantic reason; mute generated assets when color competes with topology, labels, or evidence.
 - Encode one role consistently across color, stroke, shape, and label treatment. Do not assign a new color to every module or rely on color alone.
 - Prefer alignment and whitespace for grouping. Use pale regions or boundaries only when they encode a real scope, phase, domain, or responsibility.
 - Prefer rectangles, micro-rounded rectangles, straight or elbow connectors, and modest line weights. Use circles, curves, diamonds, pills, or large rounding only when the geometry itself carries meaning.
@@ -61,6 +62,7 @@ Use this standard across prompt compilation, raster generation, PowerPoint recon
 - Repeated scenes must differ for a scientific reason such as time, action, viewpoint, modality, or outcome; otherwise reuse one context and express variation abstractly.
 - Keep repeated evidence consistent in crop, scale, camera, lighting, annotation, and border treatment.
 - Do not replace recognizable technical symbols with emoji, arbitrary Unicode glyphs, or generic placeholders.
+- Do not reduce evidence-rich scenes, trajectories, propagation maps, distributions, or technical cutaways to crude circles, squares, and line sketches merely to maximize native-object counts. Preserve their information and finish with polished, text-free raster or modular vector assets when ordinary shapes would look like placeholders.
 - Raster exceptions must be tightly cropped, independently replaceable, free of baked editable text, and recorded with provenance and rationale.
 
 ## 8. Preserve useful PowerPoint editability

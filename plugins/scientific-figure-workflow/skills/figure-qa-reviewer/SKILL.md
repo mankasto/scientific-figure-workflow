@@ -22,4 +22,6 @@ Fail the editability gate when the slide is effectively one screenshot, even if 
 
 Apply the reconstructor's [layout quality contract](../figure-ppt-reconstructor/references/layout-quality-contract.md) and the shared [publication design standard](../figure-workflow/references/publication-design-standard.md) independently. Fail visual QA for arrows that cross text, enter the wrong target, reverse direction, detach from endpoints, or form unexplained tangles. Also fail for mid-word wrapping, clipped or emergency-small text, inconsistent typography, or gratuitous numbered circles and badge-heavy headings. Review at the intended publication size. Automated geometry warnings are evidence to inspect, not findings to dismiss without a rendered visual check.
 
+Fail asset fidelity when evidence-rich source regions have been replaced by low-fidelity primitive placeholders merely to increase editability. Fail palette restraint when repeated high-saturation colors dominate the page without carrying proportionate semantic importance.
+
 Use [references/qa-schema.md](references/qa-schema.md). Update `status.json` to `complete` only when every hard gate passes.

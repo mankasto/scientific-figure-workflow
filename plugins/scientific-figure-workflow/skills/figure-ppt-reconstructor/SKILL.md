@@ -20,6 +20,8 @@ Use the installed img2pptx backend when available. Rebuild these as native Power
 
 Keep photorealistic simulator scenes, microscopy, screenshots, dense plots, and highly detailed illustrations as tightly cropped independent raster assets. Never keep editable text, panel borders, or arrows baked into a large raster crop merely to save effort.
 
+Editability must not lower the visual evidence to placeholder quality. If the approved master uses a technically rich scene, trajectory, propagation map, distribution, cutaway, or comparison thumbnail, preserve that richness with a separate text-free raster or polished modular vector asset. Use native primitives for structure and genuinely simple graphics; do not substitute generic circles, squares, or line sketches for evidence that carries recognizable detail.
+
 Plan typography and connector routing before authoring. Follow [references/layout-quality-contract.md](references/layout-quality-contract.md) and the shared [publication design standard](../figure-workflow/references/publication-design-standard.md). In particular:
 
 - route connectors behind nodes and text, with explicit attachment sides and waypoints where needed;
@@ -27,6 +29,7 @@ Plan typography and connector routing before authoring. Follow [references/layou
 - size text boxes from the rendered font metrics and rewrite or resize the layout rather than relying on aggressive shrink-to-fit;
 - prevent mid-word wrapping, orphaned one-word lines, clipped text, and inconsistent internal margins;
 - use plain typographic stage numbers by default. Do not place every number in a colored circle or badge unless the source design or meaning calls for it.
+- keep semantic accents muted enough that color remains subordinate to topology and evidence; correct high-saturation raster assets before assembly.
 
 Render and inspect the slide after authoring. Package validation cannot detect whether an arrow communicates the wrong path or whether a layout looks mechanically generated.
 

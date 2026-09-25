@@ -41,7 +41,7 @@ def main():
             visual = qa.get("visual", {})
             edit = qa.get("editability", {})
             if qa.get("passed"):
-                for check in ("connector_routing", "typography", "numbering_and_containers", "publication_size"):
+                for check in ("connector_routing", "typography", "numbering_and_containers", "asset_fidelity", "palette_restraint", "publication_size"):
                     result = visual.get(check)
                     if not isinstance(result, dict):
                         errors.append(f"QA passed without required visual check: {check}")
