@@ -4,7 +4,7 @@ import json
 from pathlib import Path
 
 STAGE_FILES = {
-    "prompt": ["01_prompt/figure_spec.yaml", "01_prompt/prompt.md", "01_prompt/visible_text.txt"],
+    "prompt": ["01_prompt/figure_spec.yaml", "01_prompt/structure_lock.yaml", "01_prompt/structure_skeleton.png", "01_prompt/prompt.md", "01_prompt/visible_text.txt"],
     "render": ["02_render/selected.png", "02_render/render_manifest.json"],
     "reconstruct": ["03_reconstruct/final.pptx", "03_reconstruct/component_manifest.json", "03_reconstruct/preview.png"],
     "qa": ["04_qa/qa_report.json", "04_qa/qa_report.md"],
@@ -41,13 +41,13 @@ def main():
             visual = qa.get("visual", {})
             edit = qa.get("editability", {})
             if qa.get("passed"):
-                for check in ("connector_routing", "typography", "numbering_and_containers", "asset_fidelity", "palette_restraint", "publication_size"):
+                for check in ("connector_routing", "typography", "numbering_and_containers", "information_density", "asset_fidelity", "palette_restraint", "publication_size"):
                     result = visual.get(check)
                     if not isinstance(result, dict):
                         errors.append(f"QA passed without required visual check: {check}")
                     elif result.get("passed") is not True:
                         errors.append(f"QA passed despite failed visual check: {check}")
-                for section in ("semantic", "visual", "package", "editability"):
+                for section in ("semantic", "structure_lock", "visual", "package", "editability"):
                     if qa.get(section, {}).get("passed") is not True:
                         errors.append(f"QA passed despite failed section: {section}")
             if qa.get("passed") and edit.get("whole_slide_raster_count", 0) > 0:

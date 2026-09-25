@@ -4,11 +4,13 @@
 {
   "passed": true,
   "semantic": {"passed": true, "findings": []},
+  "structure_lock": {"passed": true, "lock_version": 1, "findings": []},
   "visual": {
     "passed": true,
     "connector_routing": {"passed": true, "findings": []},
     "typography": {"passed": true, "findings": []},
     "numbering_and_containers": {"passed": true, "findings": []},
+    "information_density": {"passed": true, "findings": []},
     "asset_fidelity": {"passed": true, "findings": []},
     "palette_restraint": {"passed": true, "findings": []},
     "publication_size": {"passed": true, "findings": []},

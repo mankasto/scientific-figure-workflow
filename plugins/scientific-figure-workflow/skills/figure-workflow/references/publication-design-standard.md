@@ -5,6 +5,10 @@ Use this standard across prompt compilation, raster generation, PowerPoint recon
 ## 1. Freeze meaning before styling
 
 - Classify the source and the target figure separately. A method, benchmark, survey, mechanism analysis, and embodied-agent loop do not share one default layout.
+- When a reference figure is supplied, extract and approve its macrostructure before writing the image prompt: topology, visual center, region positions and relative areas, reading order, connector grammar, information density, and repeated-component pattern.
+- Record that decision as a `structure_lock.yaml` plus a rendered grayscale `structure_skeleton.png`. Treat both as first-stage deliverables, not reconstruction notes.
+- Preserve an effective reference macrostructure when the requested changes concern polish, imagery, typography, palette, spacing, or editability. Do not replace a radial loop with a pipeline, a layered architecture with cards, or an asymmetric composition with equal columns unless the user explicitly requests structural redesign or the source semantics make the reference structure invalid.
+- Every later stage must conform to the approved structure lock. A proposed topology or region-allocation change returns the job to the prompt stage for a new lock and review.
 - Create a node-and-relation inventory before drawing. Record sequence, influence, conditioning, comparison, concurrency, revision, feedback, and bidirectionality explicitly.
 - Preserve role ownership: actor, action, affected entity, response, consequence, and update target must not drift during styling.
 - Trace every scientific module, arrow, metric, example, and visual encoding to the source or mark it as non-semantic illustration.
@@ -14,6 +18,7 @@ Use this standard across prompt compilation, raster generation, PowerPoint recon
 
 - Identify one primary visual anchor and one main claim.
 - Mark each mechanism as `expanded`, `summarized`, or `referenced`.
+- For each explanatory region, record a density budget before rendering: required entities, at least one internal relation when the source contains one, evidence form, and associated metric or output. A row of unrelated thumbnails plus a summary phrase does not satisfy a mechanism region.
 - Expand the mechanism carrying the contribution; summarize supporting mechanisms with one necessary internal relation; reference background mechanisms with a short label, compact symbol, or connector annotation.
 - Give each region one communicative job. Split the figure or demote detail when one region tries to explain several unrelated mechanisms.
 - Use evidence-bearing visuals such as trajectories, masks, plots, maps, tokens, simulator frames, or source-derived crops only when they communicate a scientific fact faster than prose.
@@ -22,6 +27,7 @@ Use this standard across prompt compilation, raster generation, PowerPoint recon
 ## 3. Approve a grayscale skeleton
 
 - Establish the exact canvas, title anchors, panel bounds, module footprints, evidence slots, connector corridors, and major whitespace before detailed drawing.
+- For reference-driven work, compare the skeleton directly with the reference at thumbnail scale and verify that the same visual center, topology, regional balance, and information density remain recognizable.
 - The main organization must be understandable from geometry alone, without color, icons, or reading every label.
 - Preserve clean whitespace corridors between locally dense regions so connectors and the reader's eye have stable routes.
 - Size regions to their actual content. Reject oversized empty panels, cramped evidence slots, and mechanically equal boxes when the content is unequal.

@@ -5,7 +5,7 @@ description: Reconstruct an approved scientific-figure PNG as a hybrid editable 
 
 # Figure PPT Reconstructor
 
-Read the approved PNG and semantic contract. Write under `03_reconstruct/`:
+Read the approved PNG, semantic contract, and first-stage structure lock. Write under `03_reconstruct/`:
 
 - `final.pptx` and `preview.png`;
 - `component_manifest.json`;
@@ -17,6 +17,8 @@ Use the installed img2pptx backend when available. Rebuild these as native Power
 - titles, labels, metrics, legends, and short annotations;
 - panel fills, borders, cards, badges, bars, nodes, arrows, and connectors;
 - simple icons and charts whose semantics depend on color, direction, order, or geometry.
+
+Reconstruction must retain the locked topology, visual center, relative region allocation, connector grammar, and information density. If the approved PNG violates the structure lock, return it to the render stage instead of silently redesigning the slide.
 
 Keep photorealistic simulator scenes, microscopy, screenshots, dense plots, and highly detailed illustrations as tightly cropped independent raster assets. Never keep editable text, panel borders, or arrows baked into a large raster crop merely to save effort.
 

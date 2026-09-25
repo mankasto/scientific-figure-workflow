@@ -16,6 +16,17 @@ Source material:
 - Caption or semantic brief: [TEXT, OPTIONAL]
 - Target venue or visual community: [VENUE, OPTIONAL]
 
+Structure lock (complete before rendering):
+- Reference-structure mode: [preserve-reference / adapt-reference / new-structure]
+- Visual center and macro topology: [DESCRIPTION]
+- Relative region positions and area ratios: [DESCRIPTION]
+- Connector grammar and reading order: [DESCRIPTION]
+- Information-density target by region: [DESCRIPTION]
+- Per-region content budget: [ENTITIES + INTERNAL RELATION + EVIDENCE + METRIC/OUTPUT]
+- Allowed structural changes: [LIST]
+- Forbidden structural changes: [LIST]
+- Render and approve a grayscale structure_skeleton.png before generating candidates
+
 Figure goal:
 - Figure type: [architecture / concept / mechanism / workflow / graphical abstract / evaluation]
 - Intended use: [paper / proposal / presentation]
@@ -57,7 +68,7 @@ Content constraints:
 - Treat generated text as provisional. Rebuild all final labels as native PowerPoint text and remove image-model text artifacts from raster crops.
 
 PNG stage:
-- Write 01_prompt/figure_spec.yaml, prompt.md, visible_text.txt, and review.md.
+- Write 01_prompt/figure_spec.yaml, structure_lock.yaml, structure_skeleton.png, prompt.md, visible_text.txt, and review.md.
 - Generate [NUMBER] high-resolution candidates and select the strongest one.
 - Record the backend, prompt hash, dimensions, selected candidate, and selection rationale.
 - Favor visual quality and scene fidelity while preserving the semantic contract.
@@ -90,7 +101,7 @@ Use this form when the user already has a reference image and source document:
 ```text
 Use $figure-workflow to redesign [REFERENCE_IMAGE] using the evidence in [SOURCE_DOCUMENT].
 
-Preserve the reference figure's supported semantics, module relationships, and reading order. Improve its hierarchy, spacing, palette, element grouping, and scene quality. Use $figure-prompt-compiler to create the semantic specification and rendering prompt, $figure-png-renderer to produce and select a high-resolution PNG, $figure-ppt-reconstructor to rebuild it as an object-level editable PowerPoint, and $figure-qa-reviewer to validate the result.
+Before rendering, use $figure-prompt-compiler to extract and lock the reference's macro topology, visual center, relative region geometry, connector grammar, reading order, and information-density pattern in structure_lock.yaml, and render structure_skeleton.png for review. Preserve that approved structure while improving hierarchy, spacing, palette, element grouping, and scene quality. Then use $figure-png-renderer to produce and select a high-resolution PNG, $figure-ppt-reconstructor to rebuild it as an object-level editable PowerPoint, and $figure-qa-reviewer to validate the result.
 
 Complex scenes may remain independent high-resolution raster assets. Titles, labels, panels, arrows, connectors, metrics, and simple icons must be native editable PowerPoint objects. A whole-slide raster is forbidden. Do not invent information absent from the source. Deliver the PNG, PPTX, preview, manifests, QA report, and completed status.json.
 ```

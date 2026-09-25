@@ -39,7 +39,7 @@ Generate a reviewed high-resolution PNG, reconstruct it as an object-level edita
 and complete semantic, visual, package, and editability QA. A whole-slide raster is forbidden.
 ```
 
-The cross-stage [`publication-design-standard.md`](plugins/scientific-figure-workflow/skills/figure-workflow/references/publication-design-standard.md) defines the default quality bar for semantic fidelity, information density, grayscale skeletons, typography, connector routing, restrained visual systems, PowerPoint editability, and publication-size QA.
+The first stage produces a mandatory `structure_lock.yaml` and grayscale `structure_skeleton.png`. For reference-driven work, these lock the topology, visual center, relative region geometry, connector grammar, reading order, and information-density distribution before any image generation. The cross-stage [`publication-design-standard.md`](plugins/scientific-figure-workflow/skills/figure-workflow/references/publication-design-standard.md) defines the remaining quality bar for semantic fidelity, typography, connector routing, restrained visual systems, PowerPoint editability, and publication-size QA.
 
 Validate handoffs with:
 

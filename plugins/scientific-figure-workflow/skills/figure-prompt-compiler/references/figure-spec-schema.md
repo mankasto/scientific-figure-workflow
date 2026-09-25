@@ -9,6 +9,20 @@ audience: string
 figure_type: architecture|concept|mechanism|workflow|graphical-abstract|evaluation
 aspect_ratio: string
 figure_title_policy: omit|standalone-title|reference-defined
+structure_lock:
+  mode: preserve-reference|adapt-reference|new-structure
+  reference: string|null
+  topology: string
+  visual_center: string
+  regions:
+    - id: string
+      relative_position: string
+      relative_area: string
+      information_role: string
+  connector_grammar: string
+  density_target: string
+  allowed_changes: [string]
+  forbidden_changes: [string]
 reading_order: [string]
 visual_anchor:
   subject: string
@@ -34,6 +48,8 @@ semantic_invariants: [string]
 negative_constraints: [string]
 source_evidence: [string]
 ```
+
+Also write `01_prompt/structure_skeleton.png`: a grayscale, text-light rendering of the locked canvas, major regions, visual anchor, connector corridors, and density blocks. For reference-driven work, the skeleton must be compared with the reference before the prompt gate can pass.
 
 Use `mixed` when a region combines editable diagram structure with a generated scene or other detailed image.
 
