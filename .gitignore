@@ -5,3 +5,4 @@ __pycache__/
 work/*/02_render/candidates/
 work/*/03_reconstruct/build/
 work/*/04_qa/*.png
+work/
