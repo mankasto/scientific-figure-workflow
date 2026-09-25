@@ -1,0 +1,4 @@
+interface:
+  display_name: "Figure PPT Reconstructor"
+  short_description: "Build a hybrid object-level editable PowerPoint"
+  default_prompt: "Use $figure-ppt-reconstructor to rebuild the approved PNG with native PowerPoint text, shapes, and replaceable image assets."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Figure Prompt Compiler"
+  short_description: "Compile research content into an auditable render prompt"
+  default_prompt: "Use $figure-prompt-compiler to create a figure specification, visible-text list, and image-generation prompt."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Figure QA Reviewer"
+  short_description: "Independently audit semantics, visuals, package, and editability"
+  default_prompt: "Use $figure-qa-reviewer to independently audit the PNG and PPTX and fail any screenshot-only reconstruction."

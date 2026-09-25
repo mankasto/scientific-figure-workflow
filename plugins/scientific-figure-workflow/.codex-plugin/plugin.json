@@ -1,0 +1,18 @@
+{
+  "name": "scientific-figure-workflow",
+  "version": "0.1.0",
+  "description": "A collaborative paper-to-prompt-to-PNG-to-editable-PPT workflow with independent QA.",
+  "author": {
+    "name": "Kailang Ma and contributors"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Scientific Figure Workflow",
+    "shortDescription": "Collaborative scientific figure production and QA.",
+    "longDescription": "Coordinate prompt compilation, high-resolution PNG rendering, hybrid editable PowerPoint reconstruction, and independent QA through reproducible file handoffs.",
+    "developerName": "Kailang Ma and contributors",
+    "category": "Productivity",
+    "capabilities": ["scientific-figure-design", "image-generation", "editable-powerpoint", "quality-assurance"],
+    "defaultPrompt": "Use $figure-workflow to turn my paper or reference figure into a reviewed high-resolution PNG and a hybrid editable PowerPoint."
+  }
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Scientific Figure Workflow"
+  short_description: "Coordinate prompt, PNG, editable PPT, and QA handoffs"
+  default_prompt: "Use $figure-workflow to create a reviewed scientific PNG and hybrid editable PowerPoint from my source material."

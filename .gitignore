@@ -1,0 +1,7 @@
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
+work/*/02_render/candidates/
+work/*/03_reconstruct/build/
+work/*/04_qa/*.png

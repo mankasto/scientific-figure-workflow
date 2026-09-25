@@ -1,0 +1,4 @@
+interface:
+  display_name: "Figure PNG Renderer"
+  short_description: "Render and select a high-resolution scientific PNG"
+  default_prompt: "Use $figure-png-renderer to render and review candidates from the approved figure prompt."
