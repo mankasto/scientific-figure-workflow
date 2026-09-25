@@ -26,6 +26,7 @@ Apply this contract to publication-facing scientific figures. Fidelity to an app
 
 - Default to restrained typographic numbering such as `1  Scene Modeling`, `01 Scene Modeling`, or a small eyebrow label above the heading.
 - Use a numbered circle, pill, or badge only when it conveys a meaningful state, matches an established visual system, or is explicitly present in the approved reference.
+- Preserve unnumbered semantic circles when they represent states, agents, loop anchors, or other topology-bearing nodes. Do not confuse them with decorative numbered badges during simplification.
 - Do not repeat the same decorative container around every label. Avoid excessive rounded cards, floating bubbles, gradients, shadows, and saturated accent colors.
 - Let alignment, whitespace, rules, and a limited palette establish hierarchy. Prefer fewer, stronger groups over many small framed objects.
 

@@ -41,6 +41,7 @@ Use this standard across prompt compilation, raster generation, PowerPoint recon
 - Encode one role consistently across color, stroke, shape, and label treatment. Do not assign a new color to every module or rely on color alone.
 - Prefer alignment and whitespace for grouping. Use pale regions or boundaries only when they encode a real scope, phase, domain, or responsibility.
 - Prefer rectangles, micro-rounded rectangles, straight or elbow connectors, and modest line weights. Use circles, curves, diamonds, pills, or large rounding only when the geometry itself carries meaning.
+- Distinguish decorative containers from semantic geometry. A prohibition on circular number badges does not authorize removing circular state nodes, loop anchors, or other source-defined shapes whose geometry carries topology or role.
 - Avoid card walls, dashboard controls, poster banners, floating bubbles, decorative sidebars, generic icon repetition, gradients, glow, neon, and shadows on structural modules.
 - Keep one figure family across a paper: semantic color roles, font family, type hierarchy, strokes, arrowheads, corner treatment, panel markers, notation, icon family, and scene-rendering style remain consistent.
 
