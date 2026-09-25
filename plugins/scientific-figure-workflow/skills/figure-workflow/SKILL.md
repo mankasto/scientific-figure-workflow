@@ -14,6 +14,8 @@ Coordinate four specialist skills through files, not conversational memory:
 
 Create a job with `scripts/init_figure_job.py JOB_DIR`. Follow the folder and status contract in [references/handoff-contract.md](references/handoff-contract.md). Each specialist must read existing upstream manifests, write its own outputs, update `status.json`, and preserve rejected candidates for review.
 
+When starting from a natural-language request, use [references/prompt-template.md](references/prompt-template.md) as the intake contract. Fill it from the user's materials and stated preferences; infer ordinary defaults instead of forcing the user to complete every placeholder. Preserve explicit constraints verbatim, especially approved visible text, semantic invariants, and editability requirements.
+
 ## Completion rule
 
 The workflow is complete only when:

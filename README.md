@@ -31,6 +31,14 @@ python3 plugins/scientific-figure-workflow/scripts/init_figure_job.py work/my-fi
 
 Put papers, captions, reference images, or notes in `work/my-figure/00_source/`, then invoke `$figure-workflow`.
 
+A copy-ready intake prompt for the full workflow and a shorter reference-figure version are available in [`prompt-template.md`](plugins/scientific-figure-workflow/skills/figure-workflow/references/prompt-template.md). A minimal invocation is:
+
+```text
+Use $figure-workflow to redesign [REFERENCE_IMAGE] using [SOURCE_DOCUMENT].
+Generate a reviewed high-resolution PNG, reconstruct it as an object-level editable PPTX,
+and complete semantic, visual, package, and editability QA. A whole-slide raster is forbidden.
+```
+
 Validate handoffs with:
 
 ```bash
