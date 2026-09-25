@@ -20,6 +20,6 @@ Verify:
 
 Fail the editability gate when the slide is effectively one screenshot, even if it renders perfectly. Accept raster assets only for inherently raster or impractically complex visual regions that remain independently replaceable.
 
-Apply the reconstructor's [layout quality contract](../figure-ppt-reconstructor/references/layout-quality-contract.md) independently. Fail visual QA for arrows that cross text, enter the wrong target, reverse direction, detach from endpoints, or form unexplained tangles. Also fail for mid-word wrapping, clipped or emergency-small text, inconsistent typography, or gratuitous numbered circles and badge-heavy headings. Automated geometry warnings are evidence to inspect, not findings to dismiss without a rendered visual check.
+Apply the reconstructor's [layout quality contract](../figure-ppt-reconstructor/references/layout-quality-contract.md) and the shared [publication design standard](../figure-workflow/references/publication-design-standard.md) independently. Fail visual QA for arrows that cross text, enter the wrong target, reverse direction, detach from endpoints, or form unexplained tangles. Also fail for mid-word wrapping, clipped or emergency-small text, inconsistent typography, or gratuitous numbered circles and badge-heavy headings. Review at the intended publication size. Automated geometry warnings are evidence to inspect, not findings to dismiss without a rendered visual check.
 
 Use [references/qa-schema.md](references/qa-schema.md). Update `status.json` to `complete` only when every hard gate passes.

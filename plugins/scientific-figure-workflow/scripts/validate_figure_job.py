@@ -41,12 +41,15 @@ def main():
             visual = qa.get("visual", {})
             edit = qa.get("editability", {})
             if qa.get("passed"):
-                for check in ("connector_routing", "typography", "numbering_and_containers"):
+                for check in ("connector_routing", "typography", "numbering_and_containers", "publication_size"):
                     result = visual.get(check)
                     if not isinstance(result, dict):
                         errors.append(f"QA passed without required visual check: {check}")
                     elif result.get("passed") is not True:
                         errors.append(f"QA passed despite failed visual check: {check}")
+                for section in ("semantic", "visual", "package", "editability"):
+                    if qa.get(section, {}).get("passed") is not True:
+                        errors.append(f"QA passed despite failed section: {section}")
             if qa.get("passed") and edit.get("whole_slide_raster_count", 0) > 0:
                 errors.append("QA passed despite a whole-slide raster")
             if qa.get("passed") and edit.get("native_shape_count", 0) < 1:

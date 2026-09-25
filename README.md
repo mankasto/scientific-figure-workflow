@@ -39,6 +39,8 @@ Generate a reviewed high-resolution PNG, reconstruct it as an object-level edita
 and complete semantic, visual, package, and editability QA. A whole-slide raster is forbidden.
 ```
 
+The cross-stage [`publication-design-standard.md`](plugins/scientific-figure-workflow/skills/figure-workflow/references/publication-design-standard.md) defines the default quality bar for semantic fidelity, information density, grayscale skeletons, typography, connector routing, restrained visual systems, PowerPoint editability, and publication-size QA.
+
 Validate handoffs with:
 
 ```bash

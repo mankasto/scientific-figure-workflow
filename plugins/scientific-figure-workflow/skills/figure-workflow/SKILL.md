@@ -16,6 +16,8 @@ Create a job with `scripts/init_figure_job.py JOB_DIR`. Follow the folder and st
 
 When starting from a natural-language request, use [references/prompt-template.md](references/prompt-template.md) as the intake contract. Fill it from the user's materials and stated preferences; infer ordinary defaults instead of forcing the user to complete every placeholder. Preserve explicit constraints verbatim, especially approved visible text, semantic invariants, and editability requirements.
 
+Apply [references/publication-design-standard.md](references/publication-design-standard.md) across all stages. It governs semantic topology, information density, skeleton approval, typography, connector design, visual restraint, editability, and rendered QA; it is a quality contract rather than a mandatory visual template.
+
 ## Completion rule
 
 The workflow is complete only when:

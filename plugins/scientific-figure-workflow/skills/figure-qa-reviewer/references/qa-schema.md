@@ -9,6 +9,7 @@
     "connector_routing": {"passed": true, "findings": []},
     "typography": {"passed": true, "findings": []},
     "numbering_and_containers": {"passed": true, "findings": []},
+    "publication_size": {"passed": true, "findings": []},
     "findings": []
   },
   "package": {"passed": true, "slide_count": 1, "findings": []},
